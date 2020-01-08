@@ -1,0 +1,374 @@
+html body{
+    margin:0;
+    padding:0;
+    font-size:110%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: lighter;
+    background-color: rgb(231, 227, 227);
+    }
+
+::selection{
+    background-color:rgb(189, 243, 189);
+}
+/*TO-DO:border-boxing for the whole page*/
+@font-face{
+    font-family: "Booter - zero zero";
+    src: url(fonts/Booter\ -\ Zero\ Zero.woff) format("woff"),
+         url(fonts/Booter\ -\ Zero\ Zero.woff2) format("woff2");
+
+    /*font for the main band logo*/
+}
+.nav ul{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+}
+.nav ul li{
+    display: inline-block;
+    padding: 0.5em;
+    list-style: none;
+}
+.nav ul li a{
+    text-decoration: none;
+    color:white;
+    font-weight:bolder;
+}
+.nav ul li a:hover{
+    background-color: grey;
+    height:100%;
+    color:white;
+    border-radius:8px;
+    padding-top:0.4em;
+    font-weight: bolder;
+    
+}
+.main-nav{
+    text-align: center;
+    font-size: 1.1em;
+    border-bottom: 1px solid lightgrey;
+    width:100%;
+    position: fixed;
+    background-color: rgba(165, 129, 129, 0.1);
+  
+}
+.main-nav ul li {
+    padding: 0 5%;
+}
+.store-nav{
+text-align: center;
+position: fixed;
+height: 30px;
+width: 100%;
+padding-top: .4em;
+}
+.store-nav ul li {
+    padding:0 5%;
+}
+.main-heading{
+    font-weight: bolder;
+    margin: 0px;
+    text-align: center;
+    font-size: 4em;
+    font-family: "Booter - zero zero";
+    color:white;
+    font-weight: normal;
+}
+.band-motto{
+    color:whitesmoke;
+    text-align: center;
+    font-style: 'Ma Shan Zheng' , cursive;
+}
+.btn{
+    border: solid rgb(211, 241, 194);
+    border-radius:3px;
+    text-align: center;
+    cursor: pointer;
+    color:white;
+    font-style: italic 60%;
+    font-weight: bolder;
+    height: 30px;
+    background-color: transparent;
+}
+.btn:hover{
+    background-color: rgb(33, 37, 37);
+}
+.play-btn{
+    height:60px;
+    width:60px;
+    border-radius:50%;
+    border:solid rgb(211, 241, 194);
+    color:rgb(45, 216, 130);
+    padding:0;
+    background-color: transparent;
+}
+.play-btn:hover{
+    background-color:rgb(33, 37, 37);
+    cursor:pointer;
+}
+.btn-div{
+    text-align: center;
+}
+.tours-row{
+    border-bottom: 1px solid black;
+    padding-bottom:1em;
+    margin-bottom: 1em;
+  
+}
+.tours-row:last-child{
+    border-bottom: none;
+} 
+.tours-item{
+    display: inline-block; /*each item of touts*/
+    padding-right:.5em;
+}
+.tours-date{
+    font-weight:bolder;
+}
+
+.tours-venue{
+    width:30%;
+}
+.tours-btn{
+    max-width:14%
+}
+.park{
+    padding-right: 5.4em;
+}
+.stadium{
+    padding-right: 1.4em;
+}
+.hall{
+    padding-right:4em;
+}
+.tours-btn{
+    background-color: rgb(88, 238, 150);
+    border:none;
+    border-radius:.3em;
+}
+.tours-btn:hover{
+    background-color:rgb(47, 247, 97);
+    cursor:pointer;
+}
+.tour-text-section{
+    margin-left: 1em;
+    text-align: center;
+}
+.tours-heading{
+    text-align: center;
+    font-weight: 800;
+   font-family: 'IM Fell Great Primer SC', serif;
+}
+/*
+.small-heeading{
+    display: inline-block;
+    padding-top: 5em;
+    text-align: center;
+}*/
+.main-header{
+    background-color: rgba(0,  0, 0, .5);
+    background-blend-mode: multiply;
+    background-image: url("images/background_audio.jpg");
+    background-size: cover;
+    padding-bottom: 30px;
+   
+}
+.larger-heading{
+    font-size: 6em;
+}
+.band-image{
+    float:left;
+    height:250px;
+    width:250px;
+    border-radius:50%;
+    margin:2px;
+}
+.band-image:hover{
+   /* height:210px;
+    width:210px;
+    border-radius:50%;*/
+    opacity: 0.9;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+  
+.about-heading{
+    text-align: center;
+    font-size:2em;
+    font-family: 'IM Fell Great Primer SC', serif;
+}
+.text-section{
+    margin:0.5em;
+}
+
+#footer{
+background-color: rgb(88, 238, 150);
+/*margin-bottom: -100em;*/
+margin-top:2em;
+width: 100%;
+height: fit-content;
+position: absolute;
+}
+footer ul{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+}
+.footer ul li{
+    display: inline-block;
+    padding: 0.5em;
+    list-style: none;
+}
+.footer ul li a{
+    text-decoration: none;
+    
+}
+.band-logo-footer{
+    float:left;
+    padding-right: 8em;
+    margin-left: 1em;
+    font-family: "Booter - zero zero";
+    font-size: 1.2em;
+}
+/*STORE ITEM(CART) */
+.item-div{
+    margin:1em;
+}
+.album-div{
+    text-align: justify;
+    font-weight: 600;
+}
+.third-item-of-div{
+    text-align: justify;
+}
+.all-albums-div{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+
+.cart-btn{
+    background-color: rgb(88, 238, 150);
+    border:none;
+    border-radius:.3em;
+}
+.cart-btn:hover{
+    background-color:rgb(88, 238, 126);
+    cursor:pointer;
+}
+.coffee-cup-div{
+    padding: 30px;
+}
+/*CART FINAL*
+.cart-row1{
+font: bolder;
+
+padding-bottom: .5em;
+}
+.cart-each-column-heading{
+    padding:2em;
+    
+}
+.cart-input{
+    width: 20px;
+    height: 10px;
+}*/
+/*cart styling(final)*/
+      
+
+.cart-row {
+    display: flex;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    border-bottom: 1px solid black;
+}
+
+.cart-row {
+    display: flex;
+}
+/*
+.cart-item {
+@@ -299,31 +277,51 @@ html, body {
+}*/
+
+.cart-item-image {
+    border-radius: 10px;
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    color: white;
+    background-color: rgb(233, 40, 40);
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: rgb(212, 21, 21);
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid rgb(58, 175, 28);
+    background-color: #eee;
+    color: #333;
+    width: 50px;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    margin-left: 8em;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.purchase-btn{
+    height: 30px;
+    width:120px;
+    border-radius: 15px;
+    background-color:rgb(88, 238, 150);
+    border:none;
+    margin-left: 10em;
+    font-weight: bolder;
+}
+
+.purchase-btn:hover{
+    background-color:rgb(55, 247, 103);
+    cursor: pointer;
+}
+.cart-content{
+    margin-left:1.5em;
+}
+.section-header{
+    text-align: center;
+    font-family: 'IM Fell Great Primer SC', serif;
+}
